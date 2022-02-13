@@ -1,6 +1,6 @@
 # to-do-list-nodejs-expressjs-mysql
 
-## Projects setup
+### Projects setup
 
 ```
 npm install
