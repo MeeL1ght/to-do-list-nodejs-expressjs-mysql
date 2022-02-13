@@ -25,11 +25,11 @@ server.use(morgan('dev'))
 
 // Mysql
 server.use(mysqlConnection(mysql, {
-  host: '',
+  host: 'localhost',
   user: '',
   password: '',
   port: 3306,
-  database: ''
+  database: 'todolist-nodejs-expressjs'
 }, 'single'))
 
 // Body request
