@@ -22,6 +22,12 @@ SET time_zone = "+00:00";
 -- Base de datos: `todolist-nodejs-expressjs`
 --
 
+-- Create Database
+CREATE DATABASE `todolist-nodejs-expressjs`;
+
+-- Use Database
+USE `todolist-nodejs-expressjs`;
+
 -- --------------------------------------------------------
 
 --
