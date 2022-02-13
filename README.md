@@ -18,9 +18,9 @@ server.use(mysqlConnection(mysql, {
 ```
 
 ### Projects setup
-` ```
+```
 npm install
-``` `
+```
 
 ### Compiles and minifies for production
 
