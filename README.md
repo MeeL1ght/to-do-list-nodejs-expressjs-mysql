@@ -6,7 +6,7 @@
 - Import the file into your database manager. The file is located in the **src/database** folder
 - Configure to *MySQL*
 
-```
+```javascript
 // Mysql
 <span style="color: blue;">server<s/pan>.use(mysqlConnection(mysql, {
   host: '',
