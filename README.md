@@ -2,13 +2,13 @@
 
 ## Steps to perform to execute the project:
 
-- 1. Open the file located in the folder: **src/app.js**
-- 2. Import the file into your database manager. The file is located in the **src/database** folder
-- 3. Configure to *MySQL*
+- Open the file located in the folder: **src/app.js**
+- Import the file into your database manager. The file is located in the **src/database** folder
+- Configure to *MySQL*
 
 ```
 // Mysql
-server.use(mysqlConnection(mysql, {
+<span style="color: blue;">server<s/pan>.use(mysqlConnection(mysql, {
   host: '',
   user: '',
   password: '',
