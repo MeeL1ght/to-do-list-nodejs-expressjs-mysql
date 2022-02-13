@@ -22,7 +22,7 @@ server.use(mysqlConnection(mysql, {
 npm install
 ```
 
-### Compiles and minifies for production
+### Compile
 
 ```
 npm run dev
