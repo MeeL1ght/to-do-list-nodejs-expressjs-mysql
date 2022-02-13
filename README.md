@@ -9,7 +9,7 @@
 ```javascript
 // Mysql
 server.use(mysqlConnection(mysql, {
-  host: '',
+  host: 'localhost',
   user: '',
   password: '',
   port: 3306,
