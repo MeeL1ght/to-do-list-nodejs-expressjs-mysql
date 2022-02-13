@@ -1,0 +1,160 @@
+<%- include('../partials/head', {
+  lang,
+  title,
+  iconUrl,
+  extensionIconType
+}) 
+%>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./../css/partials/normalize.css">
+    <!-- Bootstrapt 5.1 -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
+    >
+    <link rel="stylesheet" href="./../css/styles/read.css">
+  </head>
+  
+  <body>
+
+    <!-- Spinner -->
+    <div class="spinner-border text-success spinner-body" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+
+    <div id="content">
+    <%- include('../partials/navbar', { routes }) %>
+
+      <div class="container no-select">
+        <main role="main">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-lg-10">
+              <% if (allTasks.length === 0) { %>
+              <div class="card shadow p-3 mb-5 warning rounded">
+                <div class="card-body">
+                  <!-- Title -->
+                  <h1 class="title-warning text-center mt-2 mb-4">
+                    <th><i class="fab fa-connectdevelop warning"></i></th>
+                    Tasks
+                  </h1>
+              <% } else { %>
+              <div class="card shadow p-3 mb-5 default rounded">
+                <div class="card-body">
+                  <!-- Title -->
+                  <h1 class="title text-center mt-2 mb-4">
+                    <th><i class="fab fa-connectdevelop"></i></th>
+                    Tasks
+                  </h1>
+              <% } %>
+                  <!-- table -->
+                  <table class="table table-bordered text-center font-monospace">
+                    <thead>
+                      <% if (allTasks.length === 0) { %>
+                        <h2 class="text-light mt-4 text-center">
+                          No tasks available
+                          <i class="fas fa-exclamation-circle"></i>
+                        </h2>
+                      <% } else { %> 
+                      <tr>
+                        <th>
+                          <i class="fas fa-fingerprint"></i>
+                          ID
+                        </th>
+                        <th>
+                          <i class="fas fa-burn"></i>
+                          Name
+                        </th>
+                        <th>
+                          <i class="fas fa-bahai"></i>
+                          Description
+                        </th>
+                        <th>
+                          <i class="far fa-calendar-alt"></i>
+                          Creation Date
+                        </th>
+                        <th>
+                          <i class="fas fa-bullseye"></i>
+                          Status
+                        </th>
+                        <th>
+                          <i class="fas fa-wrench"></i>
+                          Edit
+                        </th>
+                      </tr>
+                    </thead>
+                    <% } if (allTasks.length === 0) { %>
+                    <tbody>
+                      <!-- Empty -->
+                    </tbody>
+                    <% } else { %>
+                    <tbody>
+                      <% for (let i = 0; i < allTasks.length; i++) { %>
+                        <tr>
+                          <td><%= (i + 1) %></td>
+                          <td><%= allTasks[i].name %></td>
+                          <td><%= allTasks[i].description %></td>
+                          <%
+                          let day = allTasks[i].date.getDate()
+                          let month = allTasks[i].date.getMonth() + 1
+
+                          day = day > 0 && day < 10 ?
+                          `0${day}` : day 
+
+                          month = month > 0 && month < 10 ?
+                          `0${month}` : month 
+
+                          const year = allTasks[i].date.getFullYear()
+                          const renderDate = `${day}/${month}/${year}`
+                          %> 
+                          <td><%= renderDate %></td>
+                          <td>
+                            <% if (allTasks[i].status === 1) { %>
+                              <i class="fas fa-circle text-success"
+                              title="Active"></i>
+                            <% } else { %>
+                              <i class="fas fa-circle text-danger"
+                              title="Inactive"></i>
+                            <% } %> 
+                          </td>
+                          <td>
+                            <a href="#">
+                              <button type="button"
+                              class="btn btn-outline-primary fs-6"
+                              title="Edit Task"
+                              >
+                                <i class="fas fa-pen"></i>
+                              </button>
+                            </a>
+                          </td>
+                        </tr>
+                      <% } %>
+                    </tbody>
+                    <% } %>
+                  </table>
+                </div> <!-- card-body -->
+              </div> <!-- /card -->
+            </div> <!-- /col -->
+          </div> <!-- /row -->
+        </main>
+      </div> <!-- /container -->
+      
+    </div>
+
+    <%- include('../partials/footer') %>
+
+    <!-- Scripts -->
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous">
+    </script>
+    <script
+    src="https://kit.fontawesome.com/c510dd205e.js"
+    crossorigin="anonymous">
+    </script>
+    <script src="./../js/pages/read.js"></script>
+    
+  <body>
+</html>

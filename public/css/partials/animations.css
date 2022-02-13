@@ -1,0 +1,49 @@
+/* @keyframes rotate90deg {
+	to {
+		transform: rotate(90deg);
+	}
+} */
+
+@keyframes changeBoxShadowColor {
+	from {
+		box-shadow: 0 -1px 3px 3px rgba(49, 53, 73, 0.6);
+	}
+
+	50% {
+		box-shadow: 0 -1px 3px 3px rgba(77, 124, 133, 0.712);
+	}
+
+	75% {
+		box-shadow: 0 -1px 3px 3px rgba(116, 176, 187, 0.712);
+	}
+
+	to {
+		box-shadow: 0 -1px 3px 3px rgba(49, 53, 73, 0.6);
+	}
+}
+
+@keyframes earthquake {
+	0% {
+		transform: skewX(-15deg);
+	}
+
+	5% {
+		transform: skewX(15deg);
+	}
+
+	10% {
+		transform: skewX(-15deg);
+	}
+
+	15% {
+		transform: skewX(15deg);
+	}
+
+	20% {
+		transform: skewX(0deg);
+	}
+
+	100% {
+		transform: skewX(0deg);
+	}
+}

@@ -1,0 +1,113 @@
+<%- include('../partials/head', {
+  lang,
+  title,
+  iconUrl,
+  extensionIconType
+})
+%>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./../css/partials/normalize.css">
+    <!-- Bootstrapt 5.1 -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
+    >
+    <link rel="stylesheet" href="./../css/styles/create.css">
+  </head>
+
+  <body>
+
+    <!-- Spinner -->
+    <div class="spinner-border text-success spinner-body" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+
+    <div id="content">
+    <%- include('../partials/navbar', { routes }) %>
+
+      <div class="container">
+        <main role="main">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-md-7">
+              <div class="card justify-content-center align-items-center text-center shadow p-3 mb-5 rounded">
+                <div class="card-body">
+                  <form
+                  action="./create"
+                  id="create-task-form"
+                  autocomplete="OFF"
+                  >
+                    <div class="form-group">
+                      <!-- Title -->
+                      <h4 class="mb-4 mt-4 title fw-bold font-monospace no-select">
+                        <i class="fab fa-connectdevelop fs-2"></i>
+                        Create a
+                        <span class="new-text-title">new</span>
+                        Task
+                      </h4>
+                      <!-- Task name -->
+                      <div class="form-floating mb-4 no-select">
+                        <input
+                        type="text"
+                        class="form-control form-control-lg inputs default"
+                        name="task_name"
+                        id="task_name"
+                        placeholder="Write a Taks Name"
+                        maxlength="50"
+                        required
+                        >
+                        <label for="task_name">
+                          Write a Taks Name
+                        </label>
+                      </div>
+                      <!-- Task description -->
+                      <div class="form-floating mb-4 no-select">
+                        <input
+                        type="text"
+                        class="form-control form-control-lg inputs default"
+                        name="task_description"
+                        id="task_description"
+                        placeholder="Write a Task Description"
+                        maxlength="100"
+                        required
+                        >
+                        <label for="task_description">
+                          Write a Task Description
+                        </label>
+                      </div>
+                      <!-- Button > type=['submit'] -->
+                      <button
+                      type="submit"
+                      class="btn submit-button mt-2"
+                      >
+                        Create
+                        <i class="fas fa-plus-circle button"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div> <!-- /card-body-->
+            </div> <!-- /card -->
+          </div> <!-- /col -->
+        </main>
+      </div> <!-- /container -->
+    </div>
+
+    <%- include('../partials/footer') %>
+
+    <!-- Scripts -->
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous">
+    </script>
+    <script
+    src="https://kit.fontawesome.com/c510dd205e.js"
+    crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./../../js/pages/create.js" type="module"></script>
+    
+  <body>
+</html>

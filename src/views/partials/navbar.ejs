@@ -1,0 +1,70 @@
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark no-select">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="<%= routes.index %>">
+            <i class="fab fa-node-js nodejs-logo fs-3 ms-3"></i>
+            <!-- <img src="<= logoUrl %>" alt="logo" width="25" height="25" class="d-inline-block align-text-top"> -->
+            <span class="ms-2 navbar-title">To-Do List</span>
+          </a>
+          <button class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 ms-4 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page"
+                href="<%= routes.index %>">
+                <i class="fas fa-home"></i>
+                Home
+              </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Tasks
+                </a>
+                <ul class="dropdown-menu" 
+                aria-labelledby="navbarScrollingDropdown">
+                  <li>
+                    <a class="dropdown-item" href="<%= routes.create %>">
+                      <i class="fas fa-plus-circle create-navbar-icon"></i>
+                      <span class="ms-1 create-navbar-text">Create</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="<%= routes.read %>">
+                      <i class="fas fa-list-ul read-navbar-icon"></i>
+                      <span class="ms-1 read-navbar-text">Read</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="<%= routes.read %>">
+                      <i class="fas fa-edit update-navbar-icon"></i>
+                      <span class="ms-1 update-navbar-text">Update</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="<%= routes.read %>">
+                      <i class="fas fa-redo delete-navbar-icon"></i>
+                      <span class="ms-1 delete-navbar-text">Change Status</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <a class="navbar-brand" href="#" id="profile-url"
+            target="_BLANK">
+              <div class="position-relative top-0 left-0">
+                <img class="d-inline-block rounded-circle mt-4 position-absolute top-1 z-index-1"
+                id="github-logo">
+                <img class="d-inline-block rounded-circle"
+                id="github-avatar">
+              </div>
+            </a>
+          </div>
+        </div>
+      </nav>

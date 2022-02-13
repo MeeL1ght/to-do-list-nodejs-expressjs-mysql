@@ -1,0 +1,9 @@
+@import url('./../partials/scheme.css');
+
+.error-message {
+  margin-top: 24% !important;
+}
+
+.goto-home:hover {
+  color: #c2c0c0 !important;
+}

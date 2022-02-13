@@ -1,0 +1,10 @@
+footer {
+    background-color: #04060e !important;
+    border-top: 1px solid #1a4744 !important;
+	display: none;
+}
+
+.footer-author,
+.footer-year {
+	color: #67bd9c;
+}

@@ -1,0 +1,123 @@
+nav.navbar {
+	background-color: #04060e !important;
+	border-bottom: 1px solid #1a4744 !important;
+}
+
+.nodejs-logo,
+.navbar-title,
+#github-avatar,
+#github-logo {
+	transition: 400ms;
+}
+
+.nodejs-logo {
+	color: #33a771 !important;
+}
+
+.nodejs-logo:hover {
+	color: #2dc77f !important;
+	text-shadow: -2px 5px 20px rgba(69, 204, 125, 0.6) !important;
+}
+
+.navbar-title {
+	color: #8da19a !important;
+}
+
+.navbar-title:hover {
+	color: #a9c7bc !important;
+}
+
+#github-avatar {
+	height: 45px;
+	width: 45px;
+	z-index: -1;
+}
+
+#github-logo {
+	height: 20px;
+	width: 20px;
+}
+
+#github-logo:hover {
+	box-shadow: 0 0px 3px 3px rgba(150, 153, 161, 0.6) !important;
+}
+
+#github-avatar:hover {
+	box-shadow: 0 0px 2px 4px rgba(150, 153, 161, 0.6) !important;
+}
+
+ul.dropdown-menu {
+	/* width: 200px !important; */
+	/* background-color: #212529; */
+	background-color: #04060e;
+	border: 1px solid #1a4744 !important;
+}
+
+a.nav-link {
+    color: #9caab6 !important;
+}
+
+.dropdown-item {
+	color: #9caab6 !important;
+}
+
+.dropdown-item:hover {
+	color: #509c8c;
+	background-color: #092922 !important;
+}
+
+a#navbarScrollingDropdown.nav-link.dropdown-toggle:hover {
+	color: #5fa789;
+}
+
+/* Open --> Dropdown and dropdown-menu */
+a#navbarScrollingDropdown.nav-link.dropdown-toggle:hover ~ ul.dropdown-menu {
+	display: block;
+}
+
+ul.dropdown-menu:hover,
+a#navbarScrollingDropdown.nav-link.dropdown-toggle:hover {
+	display: block;
+}
+
+/* Others classes */
+
+/* (1) Create icon / text */
+.create-navbar-icon-hover {
+	color: #6cb2ce;
+	text-shadow: -2px 1px 8px rgb(108, 178, 206) !important;
+}
+
+.create-navbar-text-hover {
+	color: #9cc8da !important;
+}
+
+/* (2) Read icon / text */
+.read-navbar-icon-hover {
+	color: #e2c854;
+	text-shadow: -2px 1px 8px rgb(245, 215, 81) !important;
+}
+
+.read-navbar-text-hover {
+	color: #dad374 !important;
+}
+
+/* (3) Update icon / text */
+.update-navbar-icon-hover {
+	color: #7f4fd8;
+	text-shadow: -2px 1px 8px rgb(127, 79, 216) !important;
+}
+
+.update-navbar-text-hover {
+	color: #8052d4 !important;
+}
+
+/* (4) Change status icon / text */
+.delete-navbar-icon-hover {
+	color: #df5b5b;
+	text-shadow: -2px 1px 8px rgba(245, 68, 68, 0.678) !important;
+}
+
+.delete-navbar-text-hover {
+	color: #df5b5b !important;
+}

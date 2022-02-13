@@ -1,0 +1,131 @@
+@import url('./../partials/scheme.css');
+@import url('./../partials/loader-content.css');
+@import url('./../partials/navbar.css');
+@import url('./../partials/footer.css');
+@import url('./../partials/animations.css');
+
+#content {
+	margin-bottom: 115px !important;
+}
+
+main {
+	margin-top: 120px !important;
+}
+
+.title {
+	animation: earthquake 6s infinite ease;
+}
+
+.important-text-title {
+	color: #67bd9c;
+	text-shadow: -1px 0px 15px rgba(68, 158, 131, 0.76) !important;
+}
+
+/* Card */
+.parent-card {
+    width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #04060e !important;
+    box-shadow: 0 -1px 3px 3px rgba(49, 53, 73, 0.6);
+}
+
+div.child-card {
+	width: 15rem;
+	background-color: #04060e !important;
+	transition: 400ms ease;
+	animation: changeBoxShadowColor 7s infinite ease;
+	box-shadow: 0 -1px 3px 3px rgba(115, 124, 167, 0.6);
+}
+
+div.child-card:hover {
+	animation: none;
+	box-shadow: 0 -1px 3px 3px rgba(60, 129, 138, 0.6);
+}
+/* /Card */
+
+/* Card-title */
+.card-title {
+	font-size: 25px;
+}
+/* /Card-title */
+
+/* Task-text-card */
+.task-text-card {
+	transition: 400ms;
+	color: #67bd9c;
+}
+
+.task-text-card:hover {
+	color: #4d967a;
+}
+/* /Task-text-card */
+
+/* Create icon */
+i.create-icon-index {
+	height: 47px;
+	width: 47px;
+    transition: 800ms;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 50px;
+	color: #6cb2ce !important;
+	transition: 500ms;
+	font-size: 50px;
+}
+
+i.create-icon-index:before {
+	position: relative;
+	top: -2px;
+	left: 0px;
+}
+
+i.create-icon-index:hover {
+	color: #6cb2ce !important;
+    text-shadow: -1px 0px 25px rgb(108, 178, 206) !important;
+    transform: scale(1.1);
+	/* animation: rotate90deg 1s forwards ease; */
+}
+/* /Create icon */
+
+/* Read icon */
+i.read-icon-index {
+	color: #e2c854 !important;
+	transition: 500ms;
+	font-size: 50px;
+}
+
+i.read-icon-index:hover {
+    color: #e2c854 !important;
+	transform: scale(1.1);
+	text-shadow: -1px 0px 25px rgb(243, 211, 68) !important;
+}
+/* /Read icon */
+
+/* Update icon */
+i.update-icon-index {
+	color: #7f4fd8 !important;
+	transition: 500ms;
+	font-size: 50px;
+}
+
+i.update-icon-index:hover {
+	color: #7f4fd8 !important;
+    transform: scale(1.1);
+	text-shadow: -1px 0px 25px rgb(127, 79, 216) !important;
+}
+/* /Update icon */
+
+/* Delete icon */
+i.delete-icon-index {
+	color: #d85753 !important;
+	transition: 500ms;
+	font-size: 50px;
+}
+
+i.delete-icon-index:hover {
+	color: #ce433e !important;
+    transform: scale(1.1);
+	text-shadow: -1px 0px 25px rgba(156, 32, 23, 0.815) !important;
+}
+/* /Delete icon */

@@ -1,0 +1,14 @@
+.spinner-body {
+  height: 100px;
+  width: 100px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+}
+
+#content {
+  display: none;
+}
