@@ -18,12 +18,12 @@ server.use(mysqlConnection(mysql, {
 ```
 
 ### Projects setup
-```python
+```
 npm install
 ```
 
 ### Compiles and minifies for production
 
-```python
+```
 npm run dev
 ```
