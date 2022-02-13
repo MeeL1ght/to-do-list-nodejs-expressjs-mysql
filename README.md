@@ -8,7 +8,7 @@
 
 ```javascript
 // Mysql
-<span style="color: blue;">server<s/pan>.use(mysqlConnection(mysql, {
+server.use(mysqlConnection(mysql, {
   host: '',
   user: '',
   password: '',
